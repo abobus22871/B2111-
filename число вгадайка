@@ -1,0 +1,35 @@
+import random
+
+print("Гра - Вгадай число! \nЩоб вийти з гри, впишіть - 0")
+
+while True:
+
+   randnum = random.randint(1,10)
+
+   num = input("\nЦіле число від 1 до 10 загадане, постарайся вгадати його: ")
+
+   try:
+
+       num = int(num)
+
+   except ValueError:
+
+       print("Невірний тип данних!")
+
+       continue
+
+   if num == 0:
+
+       exit("Ви вийшли з гри.")
+
+   elif num > randnum:
+
+       print("Не вгадав, число було більше!")
+
+   elif num < randnum:
+
+       print("Не вгадав, число було менше!")
+
+   else:
+
+       print("Вітаю! Ви виграли")
