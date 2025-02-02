@@ -1,0 +1,15 @@
+age = int(input("Введіть ваш вік: "))
+name = (input("Введіть ваше ім'я:"))
+
+if age >= 18:
+
+    print("Привіт тобі вже е 18 проходь!")
+
+else:
+
+    answer = input("вхід заборонено: ")
+
+    if answer == "Так":
+        years_left = 18 - age
+
+        print("До 18 років залишилось ще", years_left, "років.")

@@ -1,0 +1,44 @@
+# Введення оцінок учня з предметів
+
+algebra = int(input("Введіть оцінку з алгебри: "))
+
+geometry = int(input("Введіть оцінку з геометрії: "))
+
+informatics = int(input("Введіть оцінку з інформатики: "))
+
+physics = int(input("Введіть оцінку з фізики: "))
+
+chemistry = int(input("Введіть оцінку з хімії: "))
+
+biology = int(input("Введіть оцінку з біології: "))
+
+
+# Обрахунок середнього балу
+
+average = (algebra + geometry + informatics + physics + chemistry + biology) / 6
+
+
+# Визначення рівня знань учня
+
+if average >= 100:
+
+   level = "високий рівень"
+
+elif average >= 80:
+
+   level = "достатній рівень"
+
+elif average >= 40 :
+
+   level = "середній рівень"
+
+else:
+
+   level = "початковий рівень"
+
+
+# Виведення результату на екран
+
+print(f"Середній бал: {round(average)}")
+
+print(f"Рівень знань: {level}")
